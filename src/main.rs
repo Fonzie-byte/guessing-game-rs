@@ -8,11 +8,9 @@ fn main() {
     let secret_number = rand::rng().random_range(1..=100);
 
     // Simple values in text: ("{value}"). Complex values in text: ("{}", value)
-    println!("The computer is thinking of a number between 1 and 100, you have {chances} chances to guess it."
-
-
-
-);
+    println!(
+        "The computer is thinking of a number between 1 and 100, you have {chances} chances to guess it."
+    );
 
     while chances > 0 {
         println!("Please type your guess:");
